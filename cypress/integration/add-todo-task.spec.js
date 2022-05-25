@@ -18,6 +18,14 @@ describe('My Add Todo Test', () => {
 
   })
 
+  it('should not create a task if the input is empty', () => {
+
+  })
+
+  it('should show a message if input is not valid on submit', () => {
+    
+  })
+
   it('should put a line through text when item is "Completed"', () => {
     // functionality needed
   })
