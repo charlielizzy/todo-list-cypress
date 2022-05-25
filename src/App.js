@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const initialList = [
   { title: "Mow lawn", completed: false },
-  { title: "Grocery hhop", completed: false },
+  { title: "Grocery shop", completed: false },
   { title: "Clean car", completed: false },
   { title: "Do taxes", completed: true }
 ];
