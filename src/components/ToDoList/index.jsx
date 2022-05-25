@@ -15,7 +15,7 @@ function TodoList(props) {
             <span className="sr-only">Remove</span>
           </th>
           <th scope="col" className="px-6 py-3">
-            <span className="sr-only">Remove</span>
+            <span className="sr-only">Complete</span>
           </th>
         </tr>
       </thead>
@@ -23,7 +23,7 @@ function TodoList(props) {
         {props.data.map((job, index) => {
           return (
             <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600" key={index}>
-              <td className={`px-6 py-4 ${job.completed ? 'line-through' : ''}`}>
+              <td className="px-6 py-4">
                 {job.title}
               </td>
               <td className="px-6 py-4">

@@ -3,10 +3,10 @@ import ListInput from './components/ListInput';
 import { useState } from 'react';
 
 const initialList = [
-  { title: "delectus aut autem", completed: false },
-  { title: "quis ut nam facilis et officia qui", completed: false },
-  { title: "fugiat veniam minus", completed: false },
-  { title: "et porro tempora", completed: true }
+  { title: "Mow lawn", completed: false },
+  { title: "Grocery hhop", completed: false },
+  { title: "Clean car", completed: false },
+  { title: "Do taxes", completed: true }
 ];
 
 function App() {
@@ -28,7 +28,6 @@ function App() {
     const newList = [...list];
     newList[index] = { ...newList[index], completed: true};
     setList(newList);
-    
   }
 
   return (
