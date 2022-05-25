@@ -61,7 +61,7 @@ describe("My Add Todo Test", () => {
   });
 
   it('should show a star to the left of the job title when "Priority" is clicked', () => {
-    // functionality needed
+    // got functionality
   });
 
   it('should remove the star from item when "Completed" is clicked', () => {
@@ -72,7 +72,7 @@ describe("My Add Todo Test", () => {
     // functionality needed
   });
 
-  it('should show link saying "unprioritized" is job is a priority', () => {
+  it('should show link saying "unprioritized" if job is a priority', () => {
     // functionality needed
   });
 
