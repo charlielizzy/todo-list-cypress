@@ -61,11 +61,16 @@ describe("My Add Todo Test", () => {
   });
 
   it('should show a star to the left of the job title when "Priority" is clicked', () => {
-    // got functionality
+    cy.visit("http://localhost:3000");
+    cy.get('[id="priority-0"]').click();
+    cy.get("tbody").find('[id="star"]').should("be.visible");
   });
 
   it('should remove the star from item when "Completed" is clicked', () => {
-    // functionality needed
+    cy.visit("http://localhost:3000");
+    cy.get('[id="priority-0"]').click();
+    cy.get('[id="completed-0"]').click();
+    cy.get("tbody").find('[id="star"]').should("have.class", "invisible");
   });
 
   it("should show priority tasks at the top of the list", () => {
